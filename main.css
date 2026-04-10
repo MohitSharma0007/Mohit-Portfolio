@@ -1,4 +1,4 @@
-    body.light-mode {
+body.light-mode {
     --text: #0a0a0a;
     --text-50: #f2f2f2;
     --text-100: #e6e6e6;
@@ -265,7 +265,7 @@ body.dark-mode {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Saira Stencil", sans-serif;
     font-weight: 400;
     background-color: var(--background);
     color: var(--text);
@@ -283,7 +283,6 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 1rem;
@@ -332,9 +331,9 @@ a:hover {
     text-decoration: underline;
 }
 
-header,
+nav,
 footer {
-    background-color: var(--secondary);
+    background-color: var(--secondary-100);
     color: var(--text);
     padding: 1rem;
 }
@@ -353,4 +352,53 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0px 0px 50px 0px var(--accent);
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+}
+
+nav>div {
+    width: 10%;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>div:last-child>button {
+    margin-left: auto;
+}
+
+nav svg,
+footer svg {
+    width: 20px;
+}
+
+nav a.logo img,
+footer a.logo img {
+    width: 50px;
+}
+
+footer {
+    border-radius: 20px 20px 0px 0px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div:first-child>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
 }
