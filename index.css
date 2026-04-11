@@ -1,0 +1,17 @@
+/* Home Intro */
+.Home-intro {
+    margin: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.Home-intro .avatar-container {
+    width: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Home-intro .avatar {
+    width: 100%;
+    aspect-ratio: 1/1;
+}

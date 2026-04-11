@@ -264,6 +264,11 @@ body.dark-mode {
     --accent-t-950: 233, 255, 229;
 }
 
+* {
+    margin: 0px;
+}
+
+
 body {
     font-family: "Saira Stencil", sans-serif;
     font-weight: 400;
@@ -285,7 +290,6 @@ h4,
 h5 {
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 1rem;
 }
 
 html {
@@ -318,7 +322,6 @@ small {
 
 p {
     color: var(--text);
-    margin-bottom: 1.5rem;
 }
 
 a {
