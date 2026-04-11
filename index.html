@@ -15,7 +15,7 @@
     <nav>
         <div> <a class="logo" href="/index.html"><img src="./Mohit.png" alt="Mohit Sharma" /></a> </div>
         <div class="nav-links">
-            <a href="/about.html"> About </a>
+            <a href="#about"> About </a>
             <a href="/contact.html"> Contact me</a>
         </div>
         <div>
@@ -27,14 +27,20 @@
         </div>
     </nav>
     <!-- Home Bar -->
-    <div class="Home-intro">
-        <div>
-            <h3>hello, Its </h3>
-            <h1>Mohit Sharma</h1>
-            <h4>I am </h4>
-            <p>Dedicated to protecting digital assets and infrastructure through proactive security measures, vulnerability assessment, and incident response.</p>
+    <div id="intro">
+        <div class="Home-intro">
+            <div class="intro-container">
+                <h3>Hello, Its </h3>
+                <h1>Mohit Sharma</h1>
+                <h4>I am <span class="autotyper"></span></h4>
+                <p>Dedicated to protecting digital assets and infrastructure through proactive security measures, vulnerability assessment, and incident response</p>
+            </div>
+            <div class="avatar-container">
+                <div><img src="./avatar.jpg" alt="" class="avatar"></div>
+            </div>
         </div>
-        <div class="avatar-container"><img src="./avatar.jpg" alt="" class="avatar"></div>
+    </div>
+    <div id="about">
     </div>
     <footer>
         <div>
@@ -69,5 +75,24 @@
         </div>
     </footer>
 </body>
+<script src="autotyping.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const autotypingArray = [
+            "Student, Developer, Coder.",
+            "a curious learner exploring the world of programming.",
+            "embracing challenges and growing through code.",
+            "learning something new in tech every day.",
+            "building consistency through daily coding practice."
+        ];
+        const exampleTyping = new AutoTyping('.autotyper', autotypingArray, {
+            typeSpeed: 40,
+            deleteSpeed: 20,
+            waitBeforeDelete: 2000,
+            waitBetweenWords: 500,
+        });
+        exampleTyping.start()
+    });
+</script>
 
 </html>
